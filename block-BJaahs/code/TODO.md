@@ -11,7 +11,7 @@ If we want to build any app the two most important thing to think about is Data 
   - `getCorrectAnswer` (will return the correct answer of the quiz when the function is called)
 
 ### Create the object using the following ways
-xfgvjkmhjgdxfgvkm.
+
 For each different ways of creating object write different solutions.
 
 - Without Object
