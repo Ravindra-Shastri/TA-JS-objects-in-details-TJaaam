@@ -1,9 +1,12 @@
+// function to create object
+
 function creatUser(name,id,noOfProjects){
 let user = {};
 user.name = name;
 user.id = id;
 user.noOfProjects = noOfProjects;
-user.getProjects =function(){
+
+user.getProjects = function(){
 return user.noOfProjects;
 };
 user.changeName = function(newName){
@@ -21,6 +24,7 @@ return user.noOfProjects;
 }
 return user;
 }
+
  let aman = creatUser("Aman",123,23);
  let john = creatUser("john",1,100);
 
@@ -45,19 +49,19 @@ return user;
 //Prototypal Pattern
 
 let userMethods = {
-    getProjects =function(){
+    getProjects: function(){
         return this.noOfProjects;
         },
-    changeName = function(newName){
+    changeName: function(newName){
         let prevName = this.name;
         this.name = newName;
         return prevName;
         },
-    incrementProject = function(){
+    incrementProject: function(){
         this.noOfProjects += 1;
         return this.noOfProjects;
         },
-    decrementProject = function(){
+    decrementProject: function(){
             this.noOfProjects -= 1;
         return this.noOfProjects;
         }
@@ -68,29 +72,9 @@ function creatUser(name,id,noOfProjects){
     user.name = name;
     user.id = id;
     user.noOfProjects = noOfProjects;
-    
     return user;
 }
 //Pseudoclassical Pattern
-
-CreatUser.prototype = {
-    getProjects =function(){
-        return this.noOfProjects;
-        },
-    changeName = function(newName){
-        let prevName = this.name;
-        this.name = newName;
-        return prevName;
-        },
-    incrementProject = function(){
-        this.noOfProjects += 1;
-        return this.noOfProjects;
-        },
-    decrementProject = function(){
-            this.noOfProjects -= 1;
-        return this.noOfProjects;
-        }
-}
 
 function CreatUser(name,id,noOfProjects){
     this.name = name;
@@ -98,8 +82,24 @@ function CreatUser(name,id,noOfProjects){
     this.noOfProjects = noOfProjects; 
 }
 
-let aman = newCreatUser("Aman",123,23);
-let john = newCreatUser("john",1,100);
+CreatUser.prototype = {
+    getProjects : function(){
+        return this.noOfProjects;
+        },
+    changeName : function(newName){
+        let prevName = this.name;
+        this.name = newName;
+        return prevName;
+        },
+    incrementProject : function(){
+        this.noOfProjects += 1;
+        return this.noOfProjects;
+        },
+    decrementProject : function(){
+            this.noOfProjects -= 1;
+        return this.noOfProjects;
+        }
+}
 
 // Class Pattern
 
@@ -127,8 +127,8 @@ decrementProject(){
 }
 }
  
-let aman = newCreatUser("Aman",123,23);
-let john = newCreatUser("john",1,100);
+let aman = new CreatUser("Aman",123,23);
+let john = new CreatUser("john",1,100);
 
 console.group("Aman");
  console.log(aman.name);
