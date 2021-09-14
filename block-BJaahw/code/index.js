@@ -70,7 +70,7 @@ class User {
     this.name = name;
     this.age = age;
 }
-    sayHello: function (){
+    sayHello(){
         alert(`Hello ${this.name}`);
     }
 }
