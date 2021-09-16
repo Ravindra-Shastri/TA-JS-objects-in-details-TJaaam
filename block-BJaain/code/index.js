@@ -9,7 +9,7 @@ console.log(this === window); //Output true
 var myFunction = function () {
   console.log(this);
 };
-myFunction(); // Output window{}
+myFunction(); // Output window
 
 // ------------
 
@@ -131,25 +131,24 @@ const obj = {
 obj.getThis3 = obj.getThis.bind(obj);
 obj.getThis4 = obj.getThis2.bind(obj); 
 
-// SyntaxError: Identifier 'obj' has already been declared
 
 // Output
-obj.getThis();
+obj.getThis(); // window
 
 // Output
-obj.getThis.call(a);
+obj.getThis.call(a); // window
 
 // Output
-obj.getThis2();
+obj.getThis2(); // obj
 
 // Output
-obj.getThis2.call(a);
+obj.getThis2.call(a); // a
 
 // Output
-obj.getThis3();
+obj.getThis3(); // window
 
 // Output
-obj.getThis4();
+obj.getThis4(); // obj
 
 // -------------
 
@@ -185,8 +184,8 @@ console.log(person.print()); // output? Jay Person
 let name1 = person.print;
 let name2 = person.details;
 
-console.log(name1()); // output? undefined
-console.log(name2.print()); // output? Jay Details
+console.log(name1()); // output? ""
+console.log(name2.print()); // output? error
 
 // --------
 
