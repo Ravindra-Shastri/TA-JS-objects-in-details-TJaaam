@@ -47,3 +47,31 @@
     },
 };
 object.setPrototypeOf(dogsMethods,animalMethods);
+
+
+function createCat(location,numberOfLegs,name,colorOfEyes){
+    let obj = createAnimal(location,numberOfLegs);
+    object.setPrototypeOf(obj,catsMethods);
+    obj.name = name;
+    obj.color = colorOfEyes;
+    return obj;
+}
+
+ let CatssMethods = {
+    meow(){
+        alert(`I am ${this.name} and I can do mewo meow 😹`);
+    },
+    changeName(newName){
+       this.name = newName;
+       return this.name;
+    },
+    changeColorOfEyes(newColor){
+        this.colorOfEyes = newColor;
+        return this.colorOfEyes;
+     },
+    summary(){
+        return `I am ${this.name} and the color of my eyes are ${this.colorOfEyes}. I can also do meow meow`;
+        
+    },
+};
+object.setPrototypeOf(catsMethods,animalMethods);
