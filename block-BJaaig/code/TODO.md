@@ -42,8 +42,8 @@ console.log(userSayHello.bind(user2)()); // output / Hello Arya
 console.log(user3.sayHello()); // output / error TypeError: user3.sayHello is not a function
 console.log(userSayHello.apply(user3)); // output Hello Bran
 console.log(userSayHello.call(user3)); // output Hello Bran
-console.log(typeof new MainUser()); // output object
-console.log(typeof new MainUser()); // output  object
+console.log(typeof new MainUser()); // output "object"
+console.log(typeof new MainUser()); // output  "object"
 console.log(new MainUser().sayHello()); // output  Hello Tyrion
 console.log(new MainUser().sayHello.call(user2)); // output Hello Arya
 console.log(new MainUser().sayHello.call(user)); // output Hello John
