@@ -1,38 +1,49 @@
+class book{
+    constructor(title,Category,author){
+        this.title = Title;
+        this.category = Category;
+        this.author = Author;
+        this.isRead = false;
+        this.finishedDate = null;   
+    }    
+    markBookAsRead(){
+        this.isRead = true;
+        this.finishedDate = Date.now();
+    }  
+}
+
 class bookList{
     constructor(){
-
+        this.books = [];
+        this.currentIndexBook = 0;
     }
- add([Book]){
- return (list of books);
+ add(book = []){
+    this.book = this.book.concat(books);
+    return this.books;
  }
- getCurrentBook(index){
-    return  index;
+ getCurrentBook(){
+    return this.books[this.currentIndexBook];
  }
  getNextBook(){
-    return (index + 1);
+    this.currentIndexBook = this.currentIndexBook + 1;
+    return this.books[this.currentIndexBook + 1];
  }
  getPrevBook(){
- return  (index - 1);
+    this.currentIndexBook = this.currentIndexBook - 1;
+    return this.books[this.currentIndexBook - 1];
  }
  changeCurrentBook(index){
-return index;
+    return this.currentIndexBook;
  }
 }
 
-class book{
-    constructor(){
-        book.Title = Title;
-        book.Category = Category;
-        book.Author = Author;
-        book.isRead (`false`);
-        book.finishedDate = date;
-    }
-    markBookAsRead(){}
-    isRead(){}
-    finishedDate(){
-        Date.now()
-    }
-}
 
+let book1 = new book("WEB DEVELOPMENT", "web development","Andy Vickler");
+let book2 = new book("HTML & CSS" , "web development", "David DuRocher");
+let book3 = new book("Node Cookbook","web development","Bethany Griggs");
+let book4 = new book("Java9","web development","Paul J.Deitel");
+let book5 = new book("Linux","web development","Mark Sobell");
 
+let library = new BookList();
 
+library.add([book1,book2,book3,book4,book5]);
