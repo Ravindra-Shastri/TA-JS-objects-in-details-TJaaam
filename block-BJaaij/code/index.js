@@ -1,8 +1,8 @@
 class book{
     constructor(title,Category,author){
-        this.title = Title;
+        this.title = title;
         this.category = Category;
-        this.author = Author;
+        this.author = author;
         this.isRead = false;
         this.finishedDate = null;   
     }    
