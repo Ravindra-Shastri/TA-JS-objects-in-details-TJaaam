@@ -26,18 +26,7 @@ Methods:
 Getter
 
 - `length`: returns the current length of the stack.
-```js
-class{
-    constructor()
-    push(){}
-    pop(){}
-    peek(){}
-    reverse(){}
-    isEmpty(){}
-    displayStack(){}
-    length(){}
-}
-```
+
 #### Test
 
 ```js
