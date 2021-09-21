@@ -43,10 +43,12 @@ class Book {
         this.isRead = false;
         this.id =  `id-${Date.now()}`;
     }
+
     toggleIsRead() {
         this.isRead = !this.isRead;
         new BookList(bookList, library.books).createUI();
     }
+
     createUI(){
             let li = document.createElement("li");
             let deleteElm = document.createElement("span");
@@ -74,6 +76,7 @@ class Book {
 
 
 let library = new BookList(bookList);
+
 library.add("Animal Farm", "Gorge Orwell", "https://i.pinimg.com/474x/2f/c8/97/2fc897111938abb5e4f57671c69cf818.jpg", "9780451526342");
 library.add("The Old Man and the Sea", "Ernest Hemingway", "https://images-na.ssl-images-amazon.com/images/I/71dUEXcxJzL.jpg", "978-0099908401");
 
@@ -87,6 +90,7 @@ function handleSubmit(event) {
     const bookImg = bookImgElm.value;
     const isbn = isbnElm.value;
     library.add(name, title, bookImg, isbn);
+
 
     nameElm.value = "";
     titleElm.value = "";
