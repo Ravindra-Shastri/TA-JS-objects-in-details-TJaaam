@@ -22,7 +22,8 @@ body {
 }
 
 header{
-    margin: 2rem 4rem;
+    margin: 0 4rem;
+    margin-top: 3rem;
     background-color:rgb(9, 2, 58);
     padding: 2rem;
     h1{
@@ -67,7 +68,7 @@ header{
 footer{
     background-color: rgb(17, 6, 88);
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 3rem;
     margin: 0 4rem;
 }
 .button-wrapper {
@@ -78,6 +79,7 @@ footer{
         padding: .5rem 1rem;
         display: inline-block;
         border-radius: 10px;
+        margin-top: 5rem;
         background:yellow;
         outline: none;
         font-weight: 800;
