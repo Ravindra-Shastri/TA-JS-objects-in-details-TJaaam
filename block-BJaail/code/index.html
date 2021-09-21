@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book List</title>
+    <script src="https://kit.fontawesome.com/1ccbc6b453.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/stylesheet/style.css">
+<body>
+    <header class="header">
+        <h1 class="flex justify-center items-center">
+            <i class="fas fa-book-open"></i> 
+            <span>My <span class="span">Book</span>List</span> 
+        </h1>
+    </header>
+    
+
+    <div class="book-list container ">
+        <form class="form ">
+            <fieldset>
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control" placeholder="Title" required>
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control" placeholder="Author" required>
+                <label for="isbn">ISBN#</label>
+                <input type="text" id="isbn" class="form-control" placeholder="ISBN" required>
+                <label for="book-img">Enter Book Image URL</label>
+                <input type="text" id="book-img" class="form-control" placeholder="Book Image URL" required>
+                <button class="submit">Add Book</button>
+            </fieldset>
+        </form>
+
+        <div class="books">
+            <ul class="bookList flex">
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
