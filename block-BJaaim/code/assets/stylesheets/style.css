@@ -157,6 +157,7 @@ footer {
   border-radius: 10px;
   background: yellow;
   outline: none;
+  margin: 0 4rem;
   font-weight: 800;
   transition: ease-in-out 900ms;
 }
