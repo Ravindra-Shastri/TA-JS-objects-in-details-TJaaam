@@ -7,6 +7,7 @@ html {
 
 body {
  line-height: 1.5;
+ background-color:rgb(7, 173, 173);
 }
 .flex{
     display: flex;
@@ -21,11 +22,20 @@ body {
     justify-content: space-between;
 }
 
+.main-container{
+    background-color: rgb(15, 5, 78);
+    margin: .8rem 6rem;
+    border: 4px solid white;
+    border-radius: 4rem;
+    box-shadow: .1rem .2rem 6rem .1rem aqua;
+}
+
 header{
     margin: 0 4rem;
-    margin-top: 3rem;
-    background-color:rgb(9, 2, 58);
+    margin-top: 1.6rem;
     padding: 2rem;
+    box-shadow: 1rem .8rem 6rem 1rem aqua;
+    border: 2px solid red;
     h1{
         color: white;
         font-size: 2.6rem;
@@ -42,7 +52,7 @@ header{
 }
 .quiz{
     width: 100%;
-    background-color: rgb(17, 6, 88);
+    // background-color: rgb(17, 6, 88);
     font-size: 1.4rem;
     padding: 6rem;
     margin: 0 4rem;
@@ -52,11 +62,13 @@ header{
     font-size: 2rem;
     padding-bottom: 1rem;
     color: white;
+    // box-shadow: .1rem .2rem 6rem .1rem aqua;
 
 }
 .options {
     .options-container {
-          margin-bottom: 1rem;  
+          margin-bottom: 1rem; 
+        //   box-shadow: .1rem .2rem 6rem .1rem aqua; 
         label {
             color:white;
             font-size: 1.4rem;
@@ -66,17 +78,19 @@ header{
     }
 }
 footer{
-    background-color: rgb(17, 6, 88);
+    // background-color: rgb(17, 6, 88);
     border-radius: 2rem;
-    padding: 3rem;
-    margin: 0 4rem;
+    border: 2px solid red;
+    padding: 2.6rem;
+    margin: 1.2rem 4rem;
+    box-shadow: .1rem .2rem 6rem .1rem aqua;
 }
 .button-wrapper {
     display: flex;
     justify-content: center;
     button {
         border: 1px solid white;
-        padding: .5rem 1rem;
+        padding: .8rem 5rem;
         display: inline-block;
         border-radius: 10px;
         margin-top: 5rem;
@@ -84,6 +98,7 @@ footer{
         outline: none;
         font-weight: 800;
         transition: ease-in-out 900ms;
+        box-shadow: .1rem .2rem 6rem .1rem aqua;
         &:hover {
             transform: scale(1.2);
             background:greenyellow;
@@ -93,7 +108,7 @@ footer{
 .btn-container {
     button {
         border: 1px solid white;
-        padding: .5rem 1rem;
+        padding: .8rem 5rem;
         display: inline-block;
         border-radius: 10px;
         background: yellow;
@@ -101,6 +116,7 @@ footer{
         margin: 0 4rem;
         font-weight: 800;
         transition: ease-in-out 900ms;
+        box-shadow: .1rem .2rem 6rem .1rem aqua;
         &:hover {
             transform: scale(1.2);
             background: greenyellow;
